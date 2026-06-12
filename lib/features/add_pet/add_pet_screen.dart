@@ -18,7 +18,7 @@ class _AddPetScreenState extends ConsumerState<AddPetScreen> {
   String _species = 'Dog';
   DateTime _birthDate = DateTime.now().subtract(const Duration(days: 365));
 
-  static const _species = ['Dog', 'Cat', 'Bird', 'Rabbit', 'Other'];
+  static const _speciesOptions = ['Dog', 'Cat', 'Bird', 'Rabbit', 'Other'];
 
   @override
   void dispose() {
@@ -75,7 +75,7 @@ class _AddPetScreenState extends ConsumerState<AddPetScreen> {
             DropdownButtonFormField<String>(
               value: _species,
               decoration: const InputDecoration(labelText: 'Species'),
-              items: _AddPetScreenState._species
+              items: _AddPetScreenState._speciesOptions
                   .map((s) => DropdownMenuItem(value: s, child: Text(s)))
                   .toList(),
               onChanged: (v) => setState(() => _species = v!),

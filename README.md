@@ -2,6 +2,16 @@
 
 **PetCare** - A Flutter pet health tracker with profiles, health logs, vaccination records, routine scheduling, and caregiver sharing.
 
+## Demo
+
+Real captures from the running app on the iOS Simulator (no mockups). See [FLOW.md](FLOW.md) for how they were generated.
+
+| Pet list | Pet profile + health timeline | Log health record |
+| --- | --- | --- |
+| ![Pet list](screenshots/01-pet-list.png) | ![Pet profile](screenshots/02-pet-profile.png) | ![Add health record](screenshots/03-add-health-record.png) |
+
+![Demo](screenshots/demo.gif)
+
 ## Features
 
 - **Pet Profiles** - Name, species, breed, age, weight, microchip ID
